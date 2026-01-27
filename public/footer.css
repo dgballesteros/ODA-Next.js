@@ -1,9 +1,9 @@
 /* Footer Styles */
-.footer {
+/* .footer {
   background-color: var(--primary);
   color: var(--primary-foreground);
   padding: var(--spacing-2xl) 0;
-}
+} */
 
 .footer-link {
   color: rgba(245, 245, 245, 0.8);

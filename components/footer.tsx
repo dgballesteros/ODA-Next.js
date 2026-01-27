@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="footer">
+        <footer className="bg-(--primary) text-(--primary-foreground) py-[var(--spacing-2xl)]">
             <div className="container">
                 <div className="footer-grid">
                     <div>
