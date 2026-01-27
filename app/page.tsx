@@ -3,19 +3,19 @@ import "@/styles/index.css";
 export default function Home() {
   return (
       <>
-      <section className="hero-section">
-          <div className="container">
-              <div className="hero-content">
-                  <h1 className="hero-title">
+      <section className="relative bg-(--primary) pt-(--spacing-5xl) pb-(--spacing-5xl)">
+          <div className="w-full max-w-[1280px] mx-auto">
+              <div className="text-center">
+                  <h1 className="font-(--font-family-heading) text-4xl mb-(--spacing-lg)" style={{ color: 'var(--primary-foreground)' }}>
                       Welcome to<br />
-                      <span className="hero-title-italic">Oracle of Art</span>
+                      <span className="italic">Oracle of Art</span>
                   </h1>
-                  <p className="hero-subtitle">
+                  <p className="text-lg max-w-2xl mt-0 mx-auto mb-(--spacing-4xl)" style={{ color: '#f5f5f5e6' }}>
                       Your educational portal to explore art history. 
                       Discover masterpieces, learn about artistic movements 
                       and immerse yourself in centuries of human creativity.
                   </p>
-                  <div className="hero-actions">
+                  <div className="flex items-center justify-center gap-(--spacing-lg) flex-col sm:flex-row">
                       <a href="/gallery" className="hero-button-primary">
                           View Gallery
                       </a>
