@@ -1,40 +1,41 @@
-import "@/styles/footer.css";
-
 export default function Footer() {
     return (
-        <footer className="bg-(--primary) text-(--primary-foreground) py-[var(--spacing-2xl)]">
+        <footer className="bg-(--primary) text-(--primary-foreground) py-(--spacing-2xl)">
             <div className="container">
-                <div className="footer-grid">
-                    <div>
-                        <h2 className="footer-logo-title">
-                            Oracle<br />of Art
+                <div className="grid grid-cols-1 gap-[var(--spacing-xl)] md:grid-cols-4">
+                    <div className="md:col-span-2">
+                        <h2 className="font-[var(--font-family-heading)] text-2xl mb-[var(--spacing-lg)]">
+                            Oracle<br />of Arts
                         </h2>
-                        <p className="footer-text-muted footer-description">
-                            Educational platform dedicated to the exploration and learning 
+                        <p className="text-[#f5f5f5cc] max-w-[28rem]">
+                            Educational platform dedicated to the exploration and learning
                             of Art History. Discover masterpieces from all eras.
                         </p>
                     </div>
 
                     <div>
-                        <h3 className="footer-section-title">Navigation</h3>
-                        <ul className="footer-list footer-text-muted">
-                            <li><a href="/gallery" className="footer-link">Gallery</a></li>
-                            <li><a href="/ai-recognition" className="footer-link">AI / Recognition</a></li>
-                            <li><a href="/contact" className="footer-link">Contact</a></li>
+                        <h3 className="font-[var(--font-family-heading)] text-lg mb-[var(--spacing-sm)]">
+                            Navigation
+                        </h3>
+                        <ul className="list-none flex flex-col gap-[var(--spacing-sm)] text-[#f5f5f5cc] [&>li>a]:text-[#f5f5f5cc] [&>li>a]:no-underline [&>li>a]:hover:text-[var(--primary-foreground)]">
+                            <li><a href="/gallery">Gallery</a></li>
+                            <li><a href="/ai-recognition">AI / Recognition</a></li>
+                            <li><a href="/contact">Contact</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3 className="footer-section-title">Legal</h3>
-                        <ul className="footer-list footer-text-muted">
-                            <li><a href="/politica-de-privacidad" className="footer-link">Privacy Policy</a></li>
-                            <li><a href="/terminos-de-uso" className="footer-link">Terms of Use</a></li>
-                            <li><a href="/accesibilidad" className="footer-link">Accessibility</a></li>
+                        <h3 className="font-[var(--font-family-heading)] text-lg mb-[var(--spacing-sm)]">
+                            Legal
+                        </h3>
+                        <ul className="list-none flex flex-col gap-[var(--spacing-sm)] text-[#f5f5f5cc] [&>li>a]:text-[#f5f5f5cc] [&>li>a]:no-underline [&>li>a]:hover:text-[var(--primary-foreground)]">
+                            <li><a href="/politica-de-privacidad">Privacy Policy</a></li>
+                            <li><a href="/terminos-de-uso">Terms of Use</a></li>
+                            <li><a href="/accesibilidad">Accessibility</a></li>
                         </ul>
                     </div>
                 </div>
-
-                <div className="footer-copyright">
+                <div className="mt-(--spacing-2xl) pt-(--spacing-xl) border-t border-[#f5f5f533] text-[#f5f5f599] text-center">
                     <p>© 2026 Oracle of Art. All rights reserved.</p>
                 </div>
             </div>

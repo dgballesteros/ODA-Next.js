@@ -5,34 +5,37 @@ import { useUserMenu } from '../hooks/useUserMenu'
 export default function Header() {
     const { isMenuOpen, menuRef, toggleMenu } = useUserMenu()
     return (
-        <header className="bg-(--primary)">
+        <header style={{ backgroundColor: 'var(--primary)' }}>
             <div className="container mx-auto flex items-center justify-between h-20">
 
                 {/* Logo */}
 
                 <a href="/" className="shrink-0">
-                    <h1 className="font-(font-family-heading) text-2xl text-(--primary-foreground) leading-1.25">
+                    <h1 className="text-2xl leading-tight" style={{ fontFamily: 'var(--font-family-heading)', color: 'var(--primary-foreground)' }}>
                         Oracle<br />
-                        <span className="font-(font-family-heading) text-xl text-(--primary-foreground)">of Art</span>
+                        <span className="text-xl" style={{ fontFamily: 'var(--font-family-heading)', color: 'var(--primary-foreground)' }}>of Art</span>
                     </h1>
                 </a>
 
                 {/* Menú de navegación */}
 
-                <nav className="flex items-center gap-10 [&>a]:text-(--primary-foreground) [&>a]:opacity-80 [&>a]:transition-opacity [&>a]:duration-200 [&>a]:hover:opacity-100">
-                    <a href="/">Home</a>
-                    <a href="/gallery">Gallery</a>
-                    <a href="/ai-recognition">AI / Recognition</a>
-                    <a href="/my-collection">My Collection</a>
-                    <a href="/contact">Contact</a>
+                <nav className="flex items-center gap-10">
+                    <a href="/" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>Home</a>
+                    <a href="/gallery" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>Gallery</a>
+                    <a href="/ai-recognition" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>AI / Recognition</a>
+                    <a href="/my-collection" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>My Collection</a>
+                    <a href="/contact" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>Contact</a>
                 </nav>
 
-                {/* Menú de */}
+                {/* Menú de usuario */}
 
-                <div className="flex items-center gap-(--spacing-md)">
+                <div className="flex items-center gap-4">
 
-                    <button className="opacity-80 transition-opacity duration-200
-                    hover:opacity-100 bg-transparent border-none cursor-pointer p-0 flex items-center" aria-label="Search" style={{ color: 'var(--primary-foreground)' }}>
+                    <button 
+                        className="opacity-80 transition-opacity duration-200 hover:opacity-100 bg-transparent border-none cursor-pointer p-0 flex items-center" 
+                        aria-label="Search" 
+                        style={{ color: 'var(--primary-foreground)' }}
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <circle cx="11" cy="11" r="8"></circle>
                             <path d="m21 21-4.35-4.35"></path>
@@ -69,92 +72,55 @@ export default function Header() {
 
                         <div
                             id="user-menu"
-                            className={isMenuOpen ? 'block' : 'hidden'}
+                            className={`absolute top-full right-0 mt-2 w-48 min-w-[200px] rounded-md shadow-lg z-50 p-0 ${isMenuOpen ? 'block' : 'hidden'}`}
                             style={{
-                                position: 'absolute',
-                                top: '100%',
-                                right: 0,
-                                marginTop: '0.5rem',
-                                width: '12rem',
                                 backgroundColor: 'var(--card)',
                                 border: '1px solid var(--border)',
-                                borderRadius: '0.375rem',
-                                boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-                                zIndex: 50,
-                                padding: 0,
-                                color: 'var(--foreground)',
-                                minWidth: '200px'
+                                color: 'var(--foreground)'
                             }}
                         >
-                            <div style={{
-                                padding: '0.75rem 1rem',
-                                borderBottom: '1px solid var(--border)'
-                            }}>
-                                <div style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '0.5rem'
-                                }}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--muted-foreground)', flexShrink: 0 }}>
+                            <div className="px-4 py-3 border-b" style={{ borderColor: 'var(--border)' }}>
+                                <div className="flex items-center gap-2">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        width="20" 
+                                        height="20" 
+                                        viewBox="0 0 24 24" 
+                                        fill="none" 
+                                        stroke="currentColor" 
+                                        strokeWidth="2" 
+                                        strokeLinecap="round" 
+                                        strokeLinejoin="round" 
+                                        className="shrink-0"
+                                        style={{ color: 'var(--muted-foreground)' }}
+                                    >
                                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg>
-                                    <p style={{
-                                        fontFamily: 'var(--font-family-heading)',
-                                        fontSize: '0.875rem',
-                                        lineHeight: '1.25rem',
-                                        margin: 0
-                                    }}>
+                                    <p className="text-sm leading-5 m-0" style={{ fontFamily: 'var(--font-family-heading)' }}>
                                         Sign in as<br />student or teacher
                                     </p>
                                 </div>
                             </div>
-                            <div style={{ padding: '0.25rem 0' }}>
+                            <div className="py-1">
                                 <a
                                     href="/login"
-                                    style={{
-                                        display: 'block',
-                                        padding: '0.5rem 1rem',
-                                        fontSize: '0.875rem',
-                                        color: 'var(--foreground)',
-                                        textDecoration: 'underline',
-                                        transition: 'background-color 0.2s',
-                                        cursor: 'pointer'
-                                    }}
-                                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--muted)'}
-                                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                                    className="block px-4 py-2 text-sm underline transition-colors duration-200 cursor-pointer hover:bg-[var(--muted)]"
+                                    style={{ color: 'var(--foreground)' }}
                                 >
                                     Sign in
                                 </a>
                                 <a
                                     href="/register"
-                                    style={{
-                                        display: 'block',
-                                        padding: '0.5rem 1rem',
-                                        fontSize: '0.875rem',
-                                        color: 'var(--foreground)',
-                                        textDecoration: 'underline',
-                                        transition: 'background-color 0.2s',
-                                        cursor: 'pointer'
-                                    }}
-                                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--muted)'}
-                                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                                    className="block px-4 py-2 text-sm underline transition-colors duration-200 cursor-pointer hover:bg-[var(--muted)]"
+                                    style={{ color: 'var(--foreground)' }}
                                 >
                                     Sign up
                                 </a>
                                 <a
                                     href="/contact"
-                                    style={{
-                                        display: 'block',
-                                        padding: '0.5rem 1rem',
-                                        fontSize: '0.875rem',
-                                        color: 'var(--foreground)',
-                                        textDecoration: 'none',
-                                        transition: 'background-color 0.2s',
-                                        cursor: 'pointer'
-                                    }}
-                                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--muted)'}
-                                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                                    className="block px-4 py-2 text-sm no-underline transition-colors duration-200 cursor-pointer hover:bg-[var(--muted)]"
+                                    style={{ color: 'var(--foreground)' }}
                                 >
                                     Help
                                 </a>
