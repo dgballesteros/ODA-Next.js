@@ -1,3 +1,5 @@
+import "@/styles/help.css";
+
 export default function Ayuda() {
     return (
         <>

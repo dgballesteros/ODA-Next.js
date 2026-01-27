@@ -1,3 +1,5 @@
+import "@/styles/recognition.css";
+
 export default function Reconocimiento() { 
     return (
         <>

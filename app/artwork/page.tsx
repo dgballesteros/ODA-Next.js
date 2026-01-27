@@ -1,3 +1,5 @@
+import "@/styles/artwork-detail.css";
+
 export default function ObraDetalle() {
     return (
         <>

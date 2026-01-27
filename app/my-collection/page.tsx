@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import "@/styles/collection.css";
 
 export default function MiColeccion() {
     const [isModalOpen, setIsModalOpen] = useState(false);

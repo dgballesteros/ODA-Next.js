@@ -30,7 +30,6 @@
 /* Main Content */
 .detail-section {
   padding-bottom: var(--spacing-4xl);
-
 }
 
 .detail-grid {
@@ -186,4 +185,3 @@
 .btn-academic-primary:hover {
   background-color: var(--hover-button);
 }
-

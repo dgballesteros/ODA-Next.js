@@ -3,15 +3,7 @@ import Footer from "@/components/footer";
 
 // Importar base.css primero para que Tailwind se cargue correctamente
 import "@/public/base.css";
-import "@/public/admin.css";
-import "@/public/auth.css";
-import "@/public/help.css";
-import "@/public/colecction.css";
-import "@/public/footer.css";
-import "@/public/gallery.css";
-import "@/public/index.css";
-import "@/public/artwork-detail.css";
-import "@/public/recognition.css";
+import "@/styles/footer.css";
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

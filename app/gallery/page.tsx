@@ -1,3 +1,5 @@
+import "@/styles/gallery.css";
+
 export default function GaleriaPage() { 
     return (
         <>

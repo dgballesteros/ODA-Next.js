@@ -1,3 +1,5 @@
+import "@/styles/auth.css";
+
 export default function LoginPage() { 
     return (
         <>
