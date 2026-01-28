@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useUserMenu } from '../hooks/useUserMenu'
 
 export default function Header() {
@@ -10,21 +11,21 @@ export default function Header() {
 
                 {/* Logo */}
 
-                <a href="/" className="shrink-0">
+                <Link href="/" className="shrink-0">
                     <h1 className="text-2xl leading-tight" style={{ fontFamily: 'var(--font-family-heading)', color: 'var(--primary-foreground)' }}>
                         Oracle<br />
                         <span className="text-xl" style={{ fontFamily: 'var(--font-family-heading)', color: 'var(--primary-foreground)' }}>of Art</span>
                     </h1>
-                </a>
+                </Link>
 
                 {/* Menú de navegación */}
 
                 <nav className="flex items-center gap-10">
-                    <a href="/" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>Home</a>
-                    <a href="/gallery" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>Gallery</a>
-                    <a href="/ai-recognition" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>AI / Recognition</a>
-                    <a href="/my-collection" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>My Collection</a>
-                    <a href="/contact" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>Contact</a>
+                    <Link href="/" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>Home</Link>
+                    <Link href="/gallery" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>Gallery</Link>
+                    <Link href="/ai-recognition" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>AI / Recognition</Link>
+                    <Link href="/my-collection" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>My Collection</Link>
+                    <Link href="/contact" className="opacity-80 transition-opacity duration-200 hover:opacity-100" style={{ color: 'var(--primary-foreground)' }}>Contact</Link>
                 </nav>
 
                 {/* Menú de usuario */}
@@ -103,27 +104,27 @@ export default function Header() {
                                 </div>
                             </div>
                             <div className="py-1">
-                                <a
+                                <Link
                                     href="/login"
-                                    className="block px-4 py-2 text-sm underline transition-colors duration-200 cursor-pointer hover:bg-[var(--muted)]"
+                                    className="block px-4 py-2 text-sm underline transition-colors duration-200 cursor-pointer hover:bg-(--muted)"
                                     style={{ color: 'var(--foreground)' }}
                                 >
                                     Sign in
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="/register"
-                                    className="block px-4 py-2 text-sm underline transition-colors duration-200 cursor-pointer hover:bg-[var(--muted)]"
+                                    className="block px-4 py-2 text-sm underline transition-colors duration-200 cursor-pointer hover:bg-(--muted)"
                                     style={{ color: 'var(--foreground)' }}
                                 >
                                     Sign up
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="/contact"
-                                    className="block px-4 py-2 text-sm no-underline transition-colors duration-200 cursor-pointer hover:bg-[var(--muted)]"
+                                    className="block px-4 py-2 text-sm no-underline transition-colors duration-200 cursor-pointer hover:bg-(--muted)"
                                     style={{ color: 'var(--foreground)' }}
                                 >
                                     Help
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

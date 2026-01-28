@@ -71,7 +71,7 @@ export default function Home() {
                       About Oracle of Art
                   </h2>
                   <p className="text-lg leading-relaxed mb-(--spacing-lg)" style={{color:'var(--muted-foreground)'}}>
-                      Oracle of Art was born with the mission of bringing the world's artistic heritage 
+                      Oracle of Art was born with the mission of bringing the world&apos;s artistic heritage 
                       closer to students, teachers, and art enthusiasts. Our platform combines 
                       academic rigor with modern technology to offer a unique and accessible educational 
                       experience.
@@ -79,7 +79,7 @@ export default function Home() {
                   <p className="text-lg leading-relaxed mb-(--spacing-lg)" style={{color:'var(--muted-foreground)'}}>
                       From the cave paintings of Altamira to the avant-garde of the 20th century, 
                       we invite you to discover the stories behind the works that have defined 
-                      humanity's artistic expression.
+                      humanity&apos;s artistic expression.
                   </p>
               </div>
           </div>
