@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <footer className="bg-(--primary) text-(--primary-foreground) py-(--spacing-2xl)">
             <div className="container">
-                <div className="grid grid-cols-1 gap-[var(--spacing-xl)] md:grid-cols-4">
+                <div className="grid grid-cols-1 gap-(--spacing-6xl) md:grid-cols-4">
                     <div className="md:col-span-2">
                         <h2 className="font-[var(--font-family-heading)] text-2xl mb-[var(--spacing-lg)]">
                             Oracle<br />of Arts
