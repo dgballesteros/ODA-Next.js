@@ -4,20 +4,20 @@ export default function Footer() {
             <div className="container">
                 <div className="grid grid-cols-1 gap-(--spacing-6xl) md:grid-cols-4">
                     <div className="md:col-span-2">
-                        <h2 className="font-[var(--font-family-heading)] text-2xl mb-[var(--spacing-lg)]">
+                        <h2 className="font-(--font-family-heading) text-2xl mb-(--spacing-lg)">
                             Oracle<br />of Arts
                         </h2>
-                        <p className="text-[#f5f5f5cc] max-w-[28rem]">
+                        <p className="text-[#f5f5f5cc] max-w-md">
                             Educational platform dedicated to the exploration and learning
                             of Art History. Discover masterpieces from all eras.
                         </p>
                     </div>
 
                     <div>
-                        <h3 className="font-[var(--font-family-heading)] text-lg mb-[var(--spacing-sm)]">
+                        <h3 className="font-(--font-family-heading) text-lg mb-(--spacing-sm)">
                             Navigation
                         </h3>
-                        <ul className="list-none flex flex-col gap-[var(--spacing-sm)] text-[#f5f5f5cc] [&>li>a]:text-[#f5f5f5cc] [&>li>a]:no-underline [&>li>a]:hover:text-[var(--primary-foreground)]">
+                        <ul className="list-none flex flex-col gap-(--spacing-sm) text-[#f5f5f5cc] [&>li>a]:text-[#f5f5f5cc] [&>li>a]:no-underline [&>li>a]:hover:text-(--primary-foreground)">
                             <li><a href="/gallery">Gallery</a></li>
                             <li><a href="/ai-recognition">AI / Recognition</a></li>
                             <li><a href="/contact">Contact</a></li>
@@ -25,10 +25,10 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="font-[var(--font-family-heading)] text-lg mb-[var(--spacing-sm)]">
+                        <h3 className="font-(--font-family-heading) text-lg mb-(--spacing-sm)">
                             Legal
                         </h3>
-                        <ul className="list-none flex flex-col gap-[var(--spacing-sm)] text-[#f5f5f5cc] [&>li>a]:text-[#f5f5f5cc] [&>li>a]:no-underline [&>li>a]:hover:text-[var(--primary-foreground)]">
+                        <ul className="list-none flex flex-col gap-(--spacing-sm) text-[#f5f5f5cc] [&>li>a]:text-[#f5f5f5cc] [&>li>a]:no-underline [&>li>a]:hover:text-(--primary-foreground)">
                             <li><a href="/politica-de-privacidad">Privacy Policy</a></li>
                             <li><a href="/terminos-de-uso">Terms of Use</a></li>
                             <li><a href="/accesibilidad">Accessibility</a></li>

@@ -66,17 +66,17 @@ export default function Home() {
       {/* About Section */}
       <section className="pt-(--spacing-4xl) pb-(--spacing-4xl) bg-(--card)">
           <div className="w-full max-w-[1280px] mx-auto">
-              <div className="max-w-[48rem] my-0 mx-auto text-center">
+              <div className="max-w-3xl my-0 mx-auto text-center">
                   <h2 className="font-(--font-family-heading) text-3xl mb-(--spacing-xl)">
                       About Oracle of Art
                   </h2>
-                  <p className="text-lg leading-[1.625] mb-(--spacing-lg)" style={{color:'var(--muted-foreground)'}}>
+                  <p className="text-lg leading-relaxed mb-(--spacing-lg)" style={{color:'var(--muted-foreground)'}}>
                       Oracle of Art was born with the mission of bringing the world's artistic heritage 
                       closer to students, teachers, and art enthusiasts. Our platform combines 
                       academic rigor with modern technology to offer a unique and accessible educational 
                       experience.
                   </p>
-                  <p className="text-lg leading-[1.625] mb-(--spacing-lg)" style={{color:'var(--muted-foreground)'}}>
+                  <p className="text-lg leading-relaxed mb-(--spacing-lg)" style={{color:'var(--muted-foreground)'}}>
                       From the cave paintings of Altamira to the avant-garde of the 20th century, 
                       we invite you to discover the stories behind the works that have defined 
                       humanity's artistic expression.
