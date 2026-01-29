@@ -12,7 +12,7 @@ export default function AdminPage() {
                         <a href="/admin/manage-users">
                             View Users
                         </a>
-                        <a href="/admin/manage-collection">
+                        <a href="/admin/manage-collections">
                             View Collection
                         </a>
                     </div>
