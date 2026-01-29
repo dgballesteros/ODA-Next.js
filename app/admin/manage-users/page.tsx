@@ -9,11 +9,11 @@ export default function ManageUsers() {
                         <table className="w-full min-w-[500px] border-collapse text-(--foreground) bg-white">
                             <thead>
                                 <tr className="bg-white text-(--foreground)">
-                                    <th className="px-4 py-3 text-left font-(--font-family-heading) font-semibold text-sm border-r border-b border-(--border)">Name</th>
-                                    <th className="px-4 py-3 text-left font-(--font-family-heading) font-semibold text-sm border-r border-b border-(--border)">Email</th>
-                                    <th className="px-4 py-3 text-left font-(--font-family-heading) font-semibold text-sm border-r border-b border-(--border)">Type</th>
-                                    <th className="px-4 py-3 text-left font-(--font-family-heading) font-semibold text-sm border-r border-b border-(--border)">Password</th>
-                                    <th className="px-4 py-3 text-left font-(--font-family-heading) font-semibold text-sm border-r border-b border-(--border)">Actions</th>
+                                    <th className="px-4 py-3 text-left font-(--font-family-heading) text-sm border-r border-b border-(--border)">Name</th>
+                                    <th className="px-4 py-3 text-left font-(--font-family-heading) text-sm border-r border-b border-(--border)">Email</th>
+                                    <th className="px-4 py-3 text-left font-(--font-family-heading) text-sm border-r border-b border-(--border)">Type</th>
+                                    <th className="px-4 py-3 text-left font-(--font-family-heading) text-sm border-r border-b border-(--border)">Password</th>
+                                    <th className="px-4 py-3 text-left font-(--font-family-heading) text-sm border-r border-b border-(--border)">Actions</th>
                                 </tr>
                             </thead>
                             <tbody className="bg-white [&>tr:hover]:bg-(--muted) [&_td]:px-4 [&_td]:py-3 [&_td]:text-(--foreground) [&_td]:border-r [&_td]:border-b [&_td]:border-(--border)">
